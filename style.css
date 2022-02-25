@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lato:ital,wght@0,300;1,400&display=swap');
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Caveat Brush', cursive;
+    /* background: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?dpr=0.800000011920929&auto=format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=') fixed no-repeat; */
+    /* background: url(https://superdevresources.com/wp-content/uploads/2015/12/new-york-background.jpg) no-repeat center center fixed; */
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(#22c1c3, #2d9afd);
+    height: 100vh;
+    /* background-image: url('https://4.bp.blogspot.com/-HP-gfOVOSGQ/WTCWt-2QVnI/AAAAAAAAAps/HzMpdcKZHMERD-Q_qnFUbpphdzCRX3vUgCLcB/s640/Aesthetic%2BCity.jpg'); */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.container {
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+    color: #FED128;
+    height: auto;
+    position: relative;
+    width: 350px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ffa31a;
+    margin-left: 455px;
+    margin-top: 50px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border: 1px solid rgba( 255, 255, 255, 0.18); */
+}
+
+input {
+    border: none;
+    padding: 10px;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-left: 0;
+    background-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-color: black;
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+    /* color: #fef702; */
+    color: black;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    /* color: #fef702; */
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 23px;
+    margin-left: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: none;
+    background-color: orangered;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.button-1 {}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: wheat;
+}
+
+li {
+    font-size: 34px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: wheat;
+    list-style: none;
+    /* text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); */
+}
+
+span {
+    color: ;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Caveat Brush', cursive;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+
+/* .highlight {
+    background: url(https://www.andyhooke.co.uk/wp-content/uploads/2018/02/yellow-brushstroke.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 8px 0;
+} */

@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<TITLE>K7 Enterprise Security Web Filter</TITLE>
+<style type="text/css">
+body { margin:5px;padding:0px; font-family:Arial; font-size:13px;background-color:#FEFEFE }
+div#stage { width:99%;height:100%;margin:auto; }
+div#header { padding:10px 3px 3px 5px;height:40px; background-color:#C00000; color:#fff;font-size:18px;font-weight:bold }
+div#content { width:99%;position:relative;top:100px;}
+div#box { margin:auto;width:500px; height:100px; border:solid 1px #FB880B;text-align:left;}
+div#box-head { background-color:#FB880B;color:#fff;font-weight:bold;height:20px;padding:5px;}
+div#box-content { padding:25px 5px 5px 5px; }
+</style>
+</HEAD>
+<BODY>
+<div id="stage">
+	<div id="header">
+		K7 Enterprise Security Web Filter
+	</div>
+	<div id="content" align="center">
+	<div id="box">
+		<div id="box-head">
+			Access denied!
+		</div>
+		<div id="box-content">
+			The Access to this page has been denied by your administrator
+		</div>
+	</div>
+	</div>
+	<div id="footer">
+	</div>
+</div>
+<script>
+var knownCategorys = [
+	"Abortion", "Advertisements", "Alcohol & Tobacco", "Anonymizer", "Arts", 
+	"Blogs", "Botnet",
+	"Cars / Transportation", "Chat & IM", "Child Abuse", "Computers & Technology", "Criminal Activity", "Cult",
+	"Dating", "Download Sites", 
+	"Education", "Entertainment",
+	"Fashion & Beauty", "Financial Services", "Forums & Newsgroups",
+	"Gambling", "Games", "Government", "Greeting Cards",
+	"Hacking", "Hate & Intolerance", "Health & Medicine",
+	"Illegal / Questionable", "Illegal Drugs", "Illegal Software",
+	"Image Sharing", "Information Security", "Internet Storage", "Internet Telephony(VoIP)",
+	"Job Search", 
+	"Leisure & Recreation",
+	"Malicious", "Mature Content", "Military", 
+	"News / Media", "Non-Profit & NGOs", "Nudity",
+	"Personal Sites", "Phishing & Fraud", "Politics",
+	"Pornography", 
+	"Real Estate", "Religion", "Remote Access Sites", "Restaurants & Dining",
+	"Search Engines & Portals", "Sex Education", "Shopping", "Social Networking", "SPAM Sites", "Sports", "Streaming Media",
+	"Tasteless", "Translators", "Travel",
+	"Violence", 
+	"Weapons", "Web Hosting", "Web-based Email",
+	"Miscellaneous"
+];
+
+var strBlockCategory = "31" ;
+if( !isNaN(parseInt(strBlockCategory)) )
+{
+	var categoryName = "Blocked List";
+	var knownCategoryId = parseInt(strBlockCategory);
+	if( knownCategoryId > 0 )
+	{
+		knownCategoryId = knownCategoryId - 1 ;
+		if( knownCategoryId >= knownCategorys.length )
+			categoryName = "Custom-Category" ;
+		else
+			categoryName = knownCategorys[ knownCategoryId ] ;
+	}
+	
+	document.getElementById("box").style.height = "125px";
+	document.getElementById("box-content").innerHTML = document.getElementById("box-content").innerHTML + "<br/><br/>Web Page Category: <b>" + categoryName + "<b><p/>" ;
+}
+</script>
+</BODY>
+</HTML>
